@@ -1,41 +1,234 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    @*<meta name="viewport" content="width=device-width" />*@
     <title>@ViewBag.Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href='../../Content/images/logo/favicon.ico' />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/js/vendor/modernizr-2.8.3.min.js")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+   <div class="wrapper">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+       <header id="header" class="top-header-area transparent-header headroom headroom--pinned">
+           <div class="header-area">
+               <div class="container hidden-xs">
+                   <div class="row hidden-xs">
+                       <!-- Start logo -->
+                       <div class="col-md-2 col-sm-12">
+                           <div class="logo">
+                               <a href="/" title="Corpex"><img src="../../Content/images/logo/1.png" alt="logo"></a>
+                           </div>
+                       </div>
+                       <!-- End logo -->
+                       <div class="col-md-8 col-sm-10">
+                           <div class="main-menu-area">
+                               <!-- Brand and toggle get grouped for better mobile display -->
+                               <div class="navbar-header">
+                                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                   </button>
+                               </div>
+                               <div class="collapse navbar-collapse text-center primary-menu">
+                                   <ul class="nav navbar-nav main-menu clearfix">
+                                       <li class="active smoot-menu drop">
+                                           <a href="index.html">HOME</a>
+                                           <ul class="dropdown">
+                                               <li><a href="index-animation-text.html">animation text</a></li>
+                                               <li><a href="index-animation-text-2.html">animation text 2</a></li>
+                                               <li><a href="index-fixed-img.html">fixed img slider</a></li>
+                                               <li><a href="index-parallax.html">parallax bg</a></li>
+                                               <li><a href="index-youtube-video-bg.html">youtube vedio bg</a></li>
+                                               <li><a href="index-youtube-video-bg-overlay.html">youtube vedio bg overlay</a></li>
+                                           </ul>
+                                       </li>
+                                       <li class="smoot-menu"><a href="about.html"> ABOUT US</a></li>
+                                       <li class="smoot-menu drop">
+                                           <a href="portfolio.html">PORTFOLIO</a>
+                                           <ul class="dropdown">
+                                               <li><a href="portfolio-two-column.html">portfolio two column</a></li>
+                                               <li><a href="portfolio-three-column.html">portfolio three column</a></li>
+                                               <li><a href="portfolio-four-column.html">portfolio four column</a></li>
+                                           </ul>
+                                       </li>
+                                       <li class="smoot-menu drop">
+                                           <a href="#pages">PAGES </a>
+                                           <ul class="dropdown">
+                                               <li><a href="about.html">about us</a></li>
+                                               <li class="drop">
+                                                   <a href="portfolio.html">portfolio</a>
+                                                   <ul class="dropdown level2">
+                                                       <li><a href="portfolio-two-column.html">portfolio two column</a></li>
+                                                       <li><a href="portfolio-three-column.html">portfolio three column</a></li>
+                                                       <li><a href="portfolio-four-column.html">portfolio four column</a></li>
+                                                   </ul>
+                                               </li>
+                                               <li class="drop">
+                                                   <a href="blog-details.html">blog </a>
+                                                   <ul class="dropdown level2">
+                                                       <li><a href="blog-details-both-sidebar.html">blog details both sidebar</a></li>
+                                                       <li><a href="blog-details-full-width.html">blog details full width</a></li>
+                                                       <li><a href="blog-details-left-sidebar.html">blog details left sidebar</a></li>
+                                                       <li><a href="blog-details-right-sidebar.html">blog details right sidebar</a></li>
+                                                       <li><a href="blog-four-column.html">blog four column</a></li>
+                                                       <li><a href="blog-three-column.html">blog three column</a></li>
+                                                       <li><a href="blog-two-column.html">blog two column</a></li>
+                                                   </ul>
+                                               </li>
+                                               <li><a href="our-team.html">our team</a></li>
+                                               <li><a href="service.html">our service</a></li>
+                                               <li><a href="contact-2.html">contact 2</a></li>
+                                           </ul>
+                                       </li>
+                                       <li class="smoot-menu drop">
+                                           <a href="blog-grid.html">BLOG</a>
+                                           <ul class="dropdown">
+                                               <li><a href="blog-four-column.html">blog four column</a></li>
+                                               <li><a href="blog-three-column.html">blog three column</a></li>
+                                               <li><a href="blog-two-column.html">blog two column</a></li>
+                                           </ul>
+                                       </li>
+                                       <li class="smoot-menu"><a href="contact.html">CONTACT</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-2 col-sm-2">
+                           <div class="header-search mt-30">
+                               <form class="form-search f-right" action="#">
+                                   <input placeholder="Search..." type="text">
+                                   <button class="search-submit" type="submit">
+                                       <i class="fa fa-search"></i>
+                                   </button>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- mobile-menu-area start -->
+               <div class="mobile-menu-area hidden-md hidden-lg hidden-sm">
+                   <div class="fluid-container">
+                       <div class="mobile-menu clearfix">
+                           <nav id="mobile_dropdown">
+                               <ul>
+                                   <li>
+                                       <a href="index.html">Home</a>
+                                       <ul>
+                                           <li><a href="index-animation-text-2.html">animation text 2</a></li>
+                                           <li><a href="index-animation-text.html">animation text</a></li>
+                                           <li><a href="index-fixed-img.html">fixed img</a></li>
+                                           <li><a href="index-parallax.html">parallax</a></li>
+                                           <li><a href="index-youtube-video-bg-overlay.html">youtube video bg overlay</a></li>
+                                           <li><a href="index-youtube-video-bg.html">youtube video bg</a></li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="blog-details.html">blog</a>
+                                       <ul>
+                                           <li>
+                                               <a href="blog-grid.html">blog grid</a>
+                                               <ul>
+                                                   <li><a href="blog-four-column.html">blog four column</a></li>
+                                                   <li><a href="blog-three-column.html">blog three column</a></li>
+                                                   <li><a href="blog-two-column.html">blog two column</a></li>
+                                               </ul>
+                                           </li>
+                                           <li>
+                                               <a href="blog-details.html">blog details</a>
+                                               <ul>
+                                                   <li><a href="blog-details-both-sidebar.html">blog details both sidebar</a></li>
+                                                   <li><a href="blog-details-full-width.html">blog details full width</a></li>
+                                                   <li><a href="blog-details-left-sidebar.html">blog details left sidebar</a></li>
+                                                   <li><a href="blog-details-right-sidebar.html">blog details right sidebar</a></li>
+                                               </ul>
+                                           </li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="#">Pages</a>
+                                       <ul>
+                                           <li><a href="about.html">ABOUT US</a></li>
+                                           <li><a href="portfolio.html">PORTFOLIO</a></li>
+                                           <li><a href="blog-grid.html">blog grid</a></li>
+                                           <li><a href="blog-details.html">BLOG details</a></li>
+                                           <li><a href="contact.html">CONTACT</a></li>
+                                           <li><a href="contact-2.html">contact 2</a></li>
+                                           <li><a href="about.html">about</a></li>
+                                           <li><a href="service.html">service</a></li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="portfolio.html">Portfolio</a>
+                                       <ul>
+                                           <li><a href="portfolio-two-column.html">2 Columns</a></li>
+                                           <li><a href="portfolio-three-column.html">3 Columns</a></li>
+                                           <li><a href="portfolio-four-column.html">4 Columns</a></li>
+                                           <li><a href="portfolio.html">portfolio</a></li>
+                                       </ul>
+                                   </li>
+                                   <li>
+                                       <a href="contact.html">Contact</a>
+                                       <ul>
+                                           <li><a href="contact-2.html">contact 2</a></li>
+                                       </ul>
+                                   </li>
+                               </ul>
+                           </nav>
+                       </div>
+                   </div>
+               </div>
+               <!-- mobile-menu-area end -->
+           </div>
+       </header>
+            @RenderBody()
+            <hr />
+            <footer id="footer" class="footer-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="copyright text-left xstext-center">
+                                <p>
+                                    &copy; <a href="#">Devitems</a> ALL Right Reserved
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="social-share text-right xstext-center">
+                                <ul>
+                                    <li><a href="#"><i class="icofont icofont-social-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icofont icofont-social-twitter"></i></a></li>
+                                    <li><a href="#"><i class="icofont icofont-social-dribble"></i></a></li>
+                                    <li><a href="#"><i class="icofont icofont-social-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="icofont icofont-social-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        @*</div>*@
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/js/vendor/jquery-1.12.1.min.js")
+        @Scripts.Render("~/js/bootstrap.min.js")
+        @Scripts.Render("~/js/plugins.js")
+        @Scripts.Render("~/js/owl.carousel.min.js")
+        @Scripts.Render("~/js/jquery.elevateZoom-3.0.8.min.js")
+        @Scripts.Render("~/js/headroom.js")
+        @Scripts.Render("~/js/jQuery.headroom.js")
+        @Scripts.Render("~/js/waypoints.min.js")
+        @Scripts.Render("~/js/waypoints.min.js")
+        @Scripts.Render("~/js/main.js")
+        @RenderSection("scripts", required: false)
+    </div>
 </body>
 </html>
