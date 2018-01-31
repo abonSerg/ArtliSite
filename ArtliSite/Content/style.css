@@ -343,6 +343,10 @@
   margin-bottom: 35px;
 }
 
+.cx-values {
+    margin-bottom: 20px;
+}
+
 .cx-values h3 {
     font-family: raleway;
     font-size: 24px;
@@ -359,12 +363,8 @@
     margin-bottom: 5px;
 }
 
-.cx-values ul {
-    margin-bottom: 20px;
-}
-
-.cx-values li {
-    list-style: disc inside
+.cx-values span {
+    padding-left: 7px;
 }
 
 .cx-skill span {
