@@ -343,6 +343,33 @@
   margin-bottom: 35px;
 }
 
+.cx-values h3 {
+    font-family: raleway;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: -3px;
+    text-transform: uppercase;
+}
+.cx-values p {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.cx-values ul {
+    margin-bottom: 20px;
+}
+
+.cx-values li {
+    list-style: disc inside
+}
+
+.cx-skill span {
+    padding-left : 7px
+}
 /*--------------------
   06. Subscribe Area
 ----------------------*/
