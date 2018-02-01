@@ -48,56 +48,7 @@
 </section>
 <!-- End quality-area -->
 <!-- Start funfact area -->
-<div class="cx-section funfact-area ptb-100 gray-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
-                <div class="single-fact text-center">
-                    <div class="fact-icon">
-                        <i class="icofont icofont-wall-clock"></i>
-                    </div>
-                    <div class="fact-count">
-                        <h2 class="count">2354</h2>
-                    </div>
-                    <p>hours worked</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
-                <div class="single-fact text-center">
-                    <div class="fact-icon">
-                        <i class="icofont icofont-ui-user-group"></i>
-                    </div>
-                    <div class="fact-count">
-                        <h2 class="count">2354</h2>
-                    </div>
-                    <p>happy customers</p>
-                </div>
-            </div>
-            @* <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
-        <div class="single-fact text-center">
-            <div class="fact-icon">
-                <i class="icofont icofont-win-trophy"></i>
-            </div>
-            <div class="fact-count">
-                <h2 class="count">2354</h2>
-            </div>
-            <p>awards winned</p>
-        </div>
-    </div>*@
-                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 hidden-sm">
-                    <div class="single-fact text-center">
-                        <div class="fact-icon">
-                            <i class="icofont icofont-like"></i>
-                        </div>
-                        <div class="fact-count">
-                            <h2 class="count">2354</h2>
-                        </div>
-                        <p>complete projects</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+@Html.Partial("_Achievements")
     <!-- End funfact area -->
     <!-- Start About area -->
     <div class="cx-about-area ptb-100 white-bg cx-section">
@@ -212,66 +163,4 @@
     </div>
 </div>
 <!-- End brand area -->
-<!-- start contact  Area  -->
-<div class="our-contact-area cx-section ptb-100 bg-6" data-black-overlay="7">
-    <div class="container">
-        <div class="row mb-40">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h2 class="title-line">CONTACT US</h2>
-                    <p>Lorem ipsum dolor sit amet, no mollis regione accusamus qui. Legere voluptua mei an, possim aliquid utroque et ius, molestie maksu rez id sea. </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="cx-contact-form">
-                    <form action="#">
-                        <div class="cx-input-group clearfix">
-                            <div class="single-input name one-half left">
-                                <input type="text" placeholder="Name">
-                            </div>
-                            <div class="single-input email one-half right">
-                                <input type="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="single-input message">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <div class="single-input text-center">
-                            <input type="submit" value="Send Message" class="cx-btn">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="cx-address-wrap clearfix mt-20">
-                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
-                    <div class="single-address text-center">
-                        <i class="icofont icofont-location-pin"></i>
-                        <h4>our location</h4>
-                        <p>3756 Melrose place, Beverly hills <br> CA 87031, Australia</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
-                    <div class="single-address text-center">
-                        <i class="icofont icofont-ui-call"></i>
-                        <h4>Call Us</h4>
-                        <p><a href="tel:14327895647">+ 1 432 789 5647</a></p>
-                        <p><a href="tel:14327895673">+ 1 432 789 5673</a></p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
-                    <div class="single-address text-center">
-                        <i class="icofont icofont-envelope"></i>
-                        <h4>Your Message</h4>
-                        <p><a href="mailto:info@alfresco.com">info@alfresco.com</a></p>
-                        <p><a href="mailto:admin@alfresco.com">admin@alfresco.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        
+@Html.Partial("_ContactUs")

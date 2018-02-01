@@ -473,6 +473,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\_ContactUs.cshtml" />
+    <Content Include="Views\Shared\_Achievements.cshtml" />
+    <Content Include="Views\Shared\_Portfolio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
