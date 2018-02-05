@@ -490,11 +490,14 @@
 }
 .cx-port-inner p {
   color: #fff;
-  font-family: raleway;
-  font-weight: 600;
   margin: auto 20px;
   text-transform: none;
   text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 .cx-port-arrow::before {
   background: rgba(0, 0, 0, 0) url("images/icons/portfolio-arow-3.png") no-repeat scroll 0 0 / 100% auto;
