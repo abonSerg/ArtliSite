@@ -481,7 +481,7 @@
   font-size: 18px;
   height: 40px;
   line-height: 40px;
-  margin: auto 5px;
+  /*margin: auto 5px;*/
   width: 40px;
 }
 .cx-port-action a:hover {
@@ -492,9 +492,9 @@
   color: #fff;
   font-family: raleway;
   font-weight: 600;
-  margin-bottom: 0;
-  margin-top: 20px;
-  text-transform: uppercase;
+  margin: auto 20px;
+  text-transform: none;
+  text-align: left;
 }
 .cx-port-arrow::before {
   background: rgba(0, 0, 0, 0) url("images/icons/portfolio-arow-3.png") no-repeat scroll 0 0 / 100% auto;
