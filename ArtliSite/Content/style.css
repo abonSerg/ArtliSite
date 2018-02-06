@@ -446,7 +446,7 @@
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .cx-port-back {
-  background: rgba(80, 193, 240, 0.6) none repeat scroll 0 0;
+  background: #4fc1f0 none repeat scroll 0 0;
   height: 100%;
   left: 0;
   opacity: 0;
