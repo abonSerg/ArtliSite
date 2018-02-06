@@ -260,7 +260,7 @@
     <Content Include="Content\images\portfolio\itvdn.jpg" />
     <Content Include="Content\images\portfolio\platforma.jpg" />
     <Content Include="Content\images\portfolio\videomaker.jpg" />
-    <Content Include="Content\images\team\sociedades-civiles.jpg" />
+    <Content Include="Content\images\team\team.jpg" />
     <Content Include="Content\plugins\animate-slider.css" />
     <Content Include="Content\plugins\animate.css" />
     <Content Include="Content\plugins\jquery-ui.min.css" />
