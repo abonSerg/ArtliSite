@@ -1,4 +1,5 @@
-﻿   <div class="our-contact-area cx-section ptb-100 bg-6" data-black-overlay="7">
+﻿@model ArtliSite.Models.ContactModel
+   <div class="our-contact-area cx-section ptb-100 bg-6" data-black-overlay="7">
     <div class="container">
         <div class="row mb-40">
             <div class="col-md-12">
@@ -11,22 +12,31 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="cx-contact-form">
-                    <form action="#">
-                        <div class="cx-input-group clearfix">
-                            <div class="single-input name one-half left">
-                                <input type="text" placeholder="Name">
+                    @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+                    {
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="cx-input-group clearfix mb-50">
+                            <div class="single-input name one-half left form-group">
+                                <input asp-for="Name" name="Name" type="text" placeholder="Name">
+                                <span asp-validation-for="Name" class="text-muted"></span>
                             </div>
-                            <div class="single-input email one-half right">
-                                <input type="email" placeholder="Email">
+                            <div class="single-input email one-half right form-group">
+                                <input asp-for="Email" name="Email" type="email" placeholder="Email">
+                                <span asp-validation-for="Email" class="text-muted"></span>
                             </div>
                         </div>
-                        <div class="single-input message">
-                            <textarea placeholder="Message"></textarea>
+                        <div class="single-input subject form-group">
+                            <input asp-for="Subject" name="Subject" type="text" placeholder="Subject">
+                            <span asp-validation-for="Subject" class="text-muted"></span>
+                        </div>
+                        <div class="single-input message form-group">
+                            <textarea asp-for="Message" name="Message" placeholder="Message"></textarea>
+                            <span asp-validation-for="Message" class="text-muted"></span>
                         </div>
                         <div class="single-input text-center">
-                            <input type="submit" value="Send Message" class="cx-btn">
+                            <input type="submit" value="send message" class="cx-btn">
                         </div>
-                    </form>
+                    }
                 </div>
             </div>
         </div>

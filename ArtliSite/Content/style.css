@@ -1192,6 +1192,22 @@
   width: 100%;
 }
  /* Start Input type placeholder test styling*/
+ .grey-color::-webkit-input-placeholder {
+  color: #a8a6a6;
+  opacity: 1;
+}
+.grey-color:-moz-placeholder { /* Firefox 18- */
+ color: #a8a6a6;
+ opacity: 1;  
+}
+.grey-color::-moz-placeholder {  /* Firefox 19+ */
+ color: #a8a6a6;
+ opacity: 1; 
+}
+.grey-color:-ms-input-placeholder {  
+  color: #a8a6a6;
+  opacity: 1; 
+}
 ::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
@@ -1243,6 +1259,9 @@
 }
 .single-input.email::before {
   content: "\f092";
+}
+.single-input.subject::before {
+  content: "\eba0";
 }
 .single-input.message::before {
   content: "\efe6";
