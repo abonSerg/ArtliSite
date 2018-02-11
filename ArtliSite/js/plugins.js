@@ -175,6 +175,17 @@
                                 isMobile = true;
                         }
 
+                        if (isMobile)
+                        {
+                            $("div#cx-slider").hide();
+                        }
+                        else
+                        {
+                            $("div#mobile-title").hide();
+                        }
+                    
+                    
+
                         if ( (navigator.userAgent.match(/MSIE 8/i)) || (navigator.userAgent.match(/MSIE 7/i)) ) {
                             // add scrollbar for IE7 & 8 to stop breaking resize function on small content sites
                                 jQuery('html').css("overflow-y" , "scroll");
@@ -363,6 +374,8 @@
                                                 meanCentered();
                                         }
                                 } else {
+
+                                    
                                         meanCentered();
                                         if (currentWidth <= meanScreenWidth) {
                                                 if (meanMenuExist === false) {
