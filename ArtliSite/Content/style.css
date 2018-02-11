@@ -1805,10 +1805,9 @@ blockquote {
 }
 .mean-bar::before {
   color: #fff;
-  content: url("images/logo/2.png");
+  content: url("images/logo/1.png");
   left: 10px;
   position: absolute;
-  top: 10px;
 }
 /*back to top*/
 #back-top {
