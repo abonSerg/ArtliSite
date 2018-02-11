@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -194,28 +195,6 @@
     <Content Include="Content\shortcode\shortcodes.css" />
     <Content Include="Content\shortcode\slider.css" />
     <Content Include="Content\style.css" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\core.css" />
-    <Content Include="css\custom.css" />
-    <Content Include="css\font-awesome.min.css" />
-    <Content Include="css\icofont.css" />
-    <Content Include="css\plugins\animate-slider.css" />
-    <Content Include="css\plugins\animate.css" />
-    <Content Include="css\plugins\jquery-ui.min.css" />
-    <Content Include="css\plugins\jquery.mb.YTPlayer.min.css" />
-    <Content Include="css\plugins\jquery.yu2fvl.css" />
-    <Content Include="css\plugins\meanmenu.css" />
-    <Content Include="css\plugins\owl.carousel.css" />
-    <Content Include="css\plugins\owl.theme.default.min.css" />
-    <Content Include="css\plugins\slick.css" />
-    <Content Include="css\responsive.css" />
-    <Content Include="css\shortcode\default.css" />
-    <Content Include="css\shortcode\footer.css" />
-    <Content Include="css\shortcode\header.css" />
-    <Content Include="css\shortcode\preloader.css" />
-    <Content Include="css\shortcode\shortcodes.css" />
-    <Content Include="css\shortcode\slider.css" />
-    <Content Include="css\style.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icofont.svg" />
