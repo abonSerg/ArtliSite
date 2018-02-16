@@ -1851,3 +1851,8 @@ p.error {
 }
 
 
+.sendemailresult {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}

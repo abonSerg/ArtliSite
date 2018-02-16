@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="cx-contact-form">
-                    @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+                    @using (Ajax.BeginForm("SendEmail", "Home", new AjaxOptions { UpdateTargetId = "results", HttpMethod = "Post", InsertionMode = InsertionMode.Replace }))
                     {
                         <div asp-validation-summary="All" class="text-danger"></div>
                         <div class="cx-input-group clearfix mb-50">
@@ -37,6 +37,7 @@
                             <input type="submit" value="send message" class="cx-btn">
                         </div>
                     }
+                    <div id="results"></div>
                 </div>
             </div>
         </div>
@@ -67,3 +68,6 @@
         </div>
     </div>
 </div>
+
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>

@@ -1,0 +1,17 @@
+﻿
+@model ArtliSite.Models.SendEmailResultModel
+
+<div id="sendemailresults" class="sendemailresult">
+    @if (Model.IsError)
+    {
+        <div class="alert alert-danger" role="alert">
+            <p>@Model.Message</p>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-success" role="alert">
+            <p>@Model.Message</p>
+        </div>
+    }
+</div>

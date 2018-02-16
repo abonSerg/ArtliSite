@@ -65,7 +65,8 @@
                 </div>
                 <div class="row">
                     <div class="cx-contact-form add-account">
-                        <form asp-antiforgery="true" asp-action="Contact" asp-controller="Home" method="POST" role="form">
+                        @using (Ajax.BeginForm("SendEmail", new AjaxOptions {UpdateTargetId = "results", HttpMethod = "Post", InsertionMode = InsertionMode.Replace}))
+                        {
                             <div asp-validation-summary="All" class="text-danger"></div>
                             <div class="cx-input-group clearfix mb-50">
                                 <div class="single-cmnt-input name one-half mb-30 left">
@@ -84,7 +85,8 @@
                             <div class="single-cmnt-input text-left">
                                 <input type="submit" value="send message" class="cx-btn">
                             </div>
-                        </form>
+                        }
+                        <div id="results"></div>
                     </div>
                 </div>
             </div>
@@ -97,6 +99,9 @@
 <div class="map-contacts">
     <div id="googleMap"></div>
 </div>
+
+<script src="~/scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
 <script>
