@@ -145,9 +145,6 @@
                 };
                 options = $.extend(defaults, options);
 
-                // get browser width
-                var currentWidth = window.innerWidth || document.documentElement.clientWidth;
-
                 return this.each(function () {
                         var meanMenu = options.meanMenuTarget;
                         var meanContainer = options.meanMenuContainer;
@@ -175,17 +172,20 @@
                                 isMobile = true;
                         }
 
+                        // get browser width
+                        var currentWidth;
+               
                         if (isMobile)
                         {
                             $("div#cx-slider").hide();
+                            currentWidth = document.documentElement.clientWidth;
                         }
                         else
                         {
                             $("div#mobile-title").hide();
+                            currentWidth = window.innerWidth || document.documentElement.clientWidth;
                         }
                     
-                    
-
                         if ( (navigator.userAgent.match(/MSIE 8/i)) || (navigator.userAgent.match(/MSIE 7/i)) ) {
                             // add scrollbar for IE7 & 8 to stop breaking resize function on small content sites
                                 jQuery('html').css("overflow-y" , "scroll");
