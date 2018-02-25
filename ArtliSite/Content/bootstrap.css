@@ -788,12 +788,6 @@ pre code {
   margin-left: -15px;
 }
 
-.equal {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-}
-
 .row:before,
 .row:after {
   display: table;
@@ -1245,13 +1239,6 @@ pre code {
   .col-md-offset-11 {
     margin-left: 91.66666666666666%;
   }
-}
-
-@media (min-width: 768px) {
-    .row.equal {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 @media (min-width: 1200px) {
