@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     @*<meta name="viewport" content="width=device-width" />*@
     <title>@ViewBag.Title</title>
@@ -9,9 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' type='image/x-icon' href='../../Content/images/logo/favicon.ico' />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="http://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" type="text/css">
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/js/vendor/modernizr-2.8.3.min.js")
+    @Styles.Render("~/bundles/modernizr")
+    @*<link href="http://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" type="text/css">*@
 </head>
 <body>
    <div class="wrapper">
