@@ -9,11 +9,6 @@ NOTE: This is Header style file. All Header related style included in this file.
 /*==================
     menu style
 ===================*/
-.equal {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .top-header-area {
   background: #000;
 }
