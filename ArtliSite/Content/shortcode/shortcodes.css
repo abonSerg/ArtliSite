@@ -9,6 +9,6 @@ Note: This is Short code style file. All Short code related style included in th
 
 */
 
-/*@import url("header.css");
+@import url("header.css");
 @import url("slider.css");
-@import url("footer.css");*/
+@import url("footer.css");
