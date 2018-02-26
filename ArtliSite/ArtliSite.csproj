@@ -169,7 +169,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\core.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\icofont.css" />
@@ -193,7 +192,6 @@
     <Content Include="Content\shortcode\footer.css" />
     <Content Include="Content\shortcode\header.css" />
     <Content Include="Content\shortcode\preloader.css" />
-    <Content Include="Content\shortcode\shortcodes.css" />
     <Content Include="Content\shortcode\slider.css" />
     <Content Include="Content\style.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />

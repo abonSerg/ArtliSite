@@ -788,12 +788,6 @@ pre code {
   margin-left: -15px;
 }
 
-.equal {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-}
-
 .row:before,
 .row:after {
   display: table;

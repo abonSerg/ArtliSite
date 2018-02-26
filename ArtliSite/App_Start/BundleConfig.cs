@@ -20,11 +20,13 @@ namespace ArtliSite
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
                 "~/Content/bootstrap.css",
+                "~/Content/bootstrap.min.css"
+                ));
+
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/style.css",
-                "~/Content/bootstrap.min.css",
-                "~/Content/core.css",
                 "~/Content/custom.css",
                 "~/Content/font-awesome.min.css",
                 "~/Content/icofont.css",
@@ -38,11 +40,11 @@ namespace ArtliSite
                 "~/Content/plugins/owl.carousel.css",
                 "~/Content/plugins/owl.theme.default.min.css",
                 "~/Content/plugins/slick.css",
+                "~/Content/plugins/jquery.yu2fvl.css",
+                "~/Content/plugins/jquery.mb.YTPlayer.min.css",
                 "~/Content/shortcode/default.css",
-                "~/Content/shortcode/footer.css",
-                "~/Content/shortcode/header.css",
                 "~/Content/shortcode/preloader.css",
-                "~/Content/shortcode/shortcodes.css",
+                "~/Content/shortcode/header.css",
                 "~/Content/shortcode/slider.css")); ;
             //"~/Content/site.css"));
         }
