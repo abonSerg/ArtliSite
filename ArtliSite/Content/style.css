@@ -8,7 +8,7 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+ 
     CSS INDEX
     ===================
   01. Promo Style
@@ -39,7 +39,6 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Raleway', sans-serif;
 */
-
 
 /*----------------------------------------
   01. Promo Style
@@ -1763,7 +1762,7 @@ blockquote {
   opacity: 1;
 }
 .add-account input[type="text"], .add-account input[type="email"], .add-account input[type="password"], .add-account textarea {
-  border-color: -moz-use-text-color -moz-use-text-color #ddd;
+  border-color: -moz-use-text-color #ddd;
   color: #3e3e3e;
   border-color: #ddd;
 }
@@ -1850,7 +1849,6 @@ p.success {
 p.error {
   color: red;
 }
-
 
 .sendemailresult {
     padding-top: 20px;
