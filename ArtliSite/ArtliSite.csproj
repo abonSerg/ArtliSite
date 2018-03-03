@@ -175,6 +175,7 @@
     <Content Include="Content\images\portfolio\configurator.jpg" />
     <Content Include="Content\images\portfolio\gold.jpg" />
     <Content Include="Content\images\portfolio\itvdn.jpg" />
+    <Content Include="Content\images\portfolio\mobile.png" />
     <Content Include="Content\images\portfolio\platforma.jpg" />
     <Content Include="Content\images\portfolio\videomaker.jpg" />
     <Content Include="Content\images\team\artem.png" />
