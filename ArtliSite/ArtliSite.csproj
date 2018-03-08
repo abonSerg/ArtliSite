@@ -252,7 +252,6 @@
     <Content Include="Content\images\logo\1.png" />
     <Content Include="Content\images\logo\2.png" />
     <Content Include="Content\images\logo\favicon.ico" />
-    <Content Include="Content\images\logo\favicon.png" />
     <Content Include="Content\images\map\1.png" />
     <Content Include="Content\images\portfolio\1.jpg" />
     <Content Include="Content\images\portfolio\10.jpg" />
