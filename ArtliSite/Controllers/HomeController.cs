@@ -10,7 +10,7 @@ namespace ArtliSite.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Artli";
 
             return View();
         }
